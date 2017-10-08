@@ -1,9 +1,9 @@
 // -------------------------------------------------------------------------------
-// 
+//
 // 		‚c‚wƒ‰ƒCƒuƒ‰ƒŠ		ƒwƒbƒ_ƒtƒ@ƒCƒ‹
-// 
+//
 // 				Ver 3.18e
-// 
+//
 // -------------------------------------------------------------------------------
 
 #ifndef __DXLIB
@@ -21,7 +21,7 @@
 // ‚c‚wƒ‰ƒCƒuƒ‰ƒŠ‚É•K—v‚È lib ƒtƒ@ƒCƒ‹‚ğAƒvƒƒWƒFƒNƒg‚ÌƒJƒŒƒ“ƒgƒtƒHƒ‹ƒ_‚â
 // ƒRƒ“ƒpƒCƒ‰‚ÌƒfƒtƒHƒ‹ƒg LIB ƒpƒX‚Éİ’è‚¹‚¸‚Ég—p‚³‚ê‚éê‡‚ÍˆÈ‰º‚Ì
 // ƒRƒƒ“ƒg‚ğŠO‚µ‚Ä‚­‚¾‚³‚¢
-//#define DX_LIB_NOT_DEFAULTPATH
+#define DX_LIB_NOT_DEFAULTPATH
 
 #ifndef __DX_MAKE
 
@@ -378,7 +378,7 @@
 
 // •`‰ææ‰æ–Êw’è—p’è‹`
 #define DX_SCREEN_FRONT								(0xfffffffc)
-#define DX_SCREEN_BACK								(0xfffffffe) 
+#define DX_SCREEN_BACK								(0xfffffffe)
 #define DX_SCREEN_WORK 								(0xfffffffd)
 #define DX_SCREEN_TEMPFRONT							(0xfffffff0)
 #define DX_SCREEN_OTHER								(0xfffffffa)
@@ -1234,7 +1234,7 @@ typedef struct tagVERTEX2D
 	float					rhw ;
 	COLOR_U8				dif ;
 	float					u, v ;
-} VERTEX2D, *LPVERTEX2D ; 
+} VERTEX2D, *LPVERTEX2D ;
 
 // ‚Q‚c•`‰æ‚Ég—p‚·‚é’¸“_ƒf[ƒ^Œ^(DrawPrimitive2DToShader—p)
 typedef struct tagVERTEX2DSHADER
@@ -1245,7 +1245,7 @@ typedef struct tagVERTEX2DSHADER
 	COLOR_U8				spc ;
 	float					u, v ;
 	float					su, sv ;
-} VERTEX2DSHADER, *LPVERTEX2DSHADER ; 
+} VERTEX2DSHADER, *LPVERTEX2DSHADER ;
 
 // ‚Q‚c•`‰æ‚Ég—p‚·‚é’¸“_ƒf[ƒ^Œ^(ŒöŠJ—p)
 typedef struct tagVERTEX
@@ -1835,7 +1835,7 @@ extern	int			WaitKey( void ) ;														// ƒL[‚Ì“ü—Í‘Ò‚¿‚ğs‚¤
 // ƒJƒEƒ“ƒ^‹y‚Ñæ“¾ŒnŠÖ”
 extern	int			GetNowCount(				int UseRDTSCFlag = FALSE ) ;				// ƒ~ƒŠ•b’PˆÊ‚Ì¸“x‚ğ‚ÂƒJƒEƒ“ƒ^‚ÌŒ»İ’l‚ğ“¾‚é
 extern	LONGLONG	GetNowHiPerformanceCount(	int UseRDTSCFlag = FALSE ) ;				// GetNowCount‚Ì‚¸“xƒo[ƒWƒ‡ƒ“
-extern	int			GetDateTime(				DATEDATA *DateBuf ) ;						// Œ»İ‚ğæ“¾‚·‚é 
+extern	int			GetDateTime(				DATEDATA *DateBuf ) ;						// Œ»İ‚ğæ“¾‚·‚é
 
 // —”æ“¾
 extern	int			GetRand( int RandMax ) ;												// —”‚ğæ“¾‚·‚é( RandMax : •Ô‚Á‚Ä—ˆ‚é’l‚ÌÅ‘å’l )
@@ -2130,7 +2130,7 @@ extern 	int			CloseNetWork(					int NetHandle ) ;																		// Ú‘±‚ğI—¹
 
 extern 	int			GetNetWorkAcceptState(			int NetHandle ) ;																		// Ú‘±ó‘Ô‚ğæ“¾‚·‚é
 extern 	int			GetNetWorkDataLength(			int NetHandle ) ;																		// óMƒf[ƒ^‚Ì—Ê‚ğ“¾‚é
-extern	int			GetNetWorkSendDataLength(		int NetHandle ) ;																		// –¢‘—M‚Ìƒf[ƒ^‚Ì—Ê‚ğ“¾‚é 
+extern	int			GetNetWorkSendDataLength(		int NetHandle ) ;																		// –¢‘—M‚Ìƒf[ƒ^‚Ì—Ê‚ğ“¾‚é
 extern 	int			GetNewAcceptNetWork(			void ) ;																				// V‚½‚ÉÚ‘±‚µ‚½’ÊM‰ñü‚ğ“¾‚é
 extern 	int			GetLostNetWork(					void ) ;																				// Ú‘±‚ğØ’f‚³‚ê‚½’ÊM‰ñü‚ğ“¾‚é
 extern 	int			GetNetWorkIP(					int NetHandle, IPDATA      *IpBuf ) ;													// Ú‘±æ‚Ì‚h‚o‚ğ“¾‚é( IPv4”Å )
@@ -2829,7 +2829,7 @@ extern	int				GetWaitVSyncFlag(							void ) ;																		// ScreenFlip À
 extern	int				SetFullSceneAntiAliasingMode(				int Samples, int Quality ) ;													// ‰æ–Ê‚Ìƒtƒ‹ƒXƒNƒŠ[ƒ“ƒAƒ“ƒ`ƒGƒCƒŠƒAƒXƒ‚[ƒh‚Ìİ’è‚ğs‚¤( DxLib_Init ‚Ì‘O‚Å‚Ì‚İg—p‰Â”\ )
 extern	int				SetGraphDisplayArea(						int x1, int y1, int x2, int y2 ) ;												// ScreenFlip ‚É•\‰æ–Ê‘S‘Ì‚É“]‘—‚·‚é— ‰æ–Ê‚Ì—Ìˆæ‚ğİ’è‚·‚é( DxLib_Init ‚Ì‘O‚Å‚Ì‚İg—p‰Â”\ )
 extern	int				SetChangeScreenModeGraphicsSystemResetFlag(	int Flag ) ;																	// ‰æ–Êƒ‚[ƒh•ÏX( ‚ÆƒEƒCƒ“ƒhƒEƒ‚[ƒh•ÏX )‚ÉƒOƒ‰ƒtƒBƒbƒNƒXƒVƒXƒeƒ€‚Ìİ’è‚âƒOƒ‰ƒtƒBƒbƒNƒnƒ“ƒhƒ‹‚ğƒŠƒZƒbƒg‚·‚é‚©‚Ç‚¤‚©‚ğİ’è‚·‚é( TRUE:ƒŠƒZƒbƒg‚·‚é( ƒfƒtƒHƒ‹ƒg )  FALSE:ƒŠƒZƒbƒg‚µ‚È‚¢ )
-extern	int				GetScreenState(								int *SizeX, int *SizeY, int *ColorBitDepth ) ;									// Œ»İ‚Ì‰æ–Ê‚Ì‰ğ‘œ“x‚ÆƒJƒ‰[ƒrƒbƒg”‚ğ“¾‚é 
+extern	int				GetScreenState(								int *SizeX, int *SizeY, int *ColorBitDepth ) ;									// Œ»İ‚Ì‰æ–Ê‚Ì‰ğ‘œ“x‚ÆƒJƒ‰[ƒrƒbƒg”‚ğ“¾‚é
 extern	int				GetDrawScreenSize(							int *XBuf, int *YBuf ) ;														// •`‰ææ‚ÌƒTƒCƒY‚ğæ“¾‚·‚é
 extern	int				GetScreenBitDepth(							void ) ;																		// ‰æ–Ê‚ÌƒJƒ‰[ƒrƒbƒg”‚ğæ“¾‚·‚é
 extern	int				GetColorBitDepth(							void ) ;																		// GetScreenBitDepth ‚Ì‹Œ–¼Ì
@@ -2873,7 +2873,7 @@ extern	int			RenderVertex(								void ) ;										// ’¸“_ƒoƒbƒtƒ@‚É—­‚Ü‚Á‚½’¸“
 extern	int			SaveDrawScreen(       int x1, int y1, int x2, int y2, const TCHAR *FileName, int SaveType = DX_IMAGESAVETYPE_BMP , int Jpeg_Quality = 80 , int Jpeg_Sample2x1 = TRUE , int Png_CompressionLevel = -1 ) ;		// Œ»İ•`‰æ‘ÎÛ‚É‚È‚Á‚Ä‚¢‚é‰æ–Ê‚ğƒtƒ@ƒCƒ‹‚Å•Û‘¶‚·‚é
 extern	int			SaveDrawScreenToBMP(  int x1, int y1, int x2, int y2, const TCHAR *FileName ) ;																																	// Œ»İ•`‰æ‘ÎÛ‚É‚È‚Á‚Ä‚¢‚é‰æ–Ê‚ğ‚a‚l‚oŒ`®‚Å•Û‘¶‚·‚é
 extern	int			SaveDrawScreenToDDS(  int x1, int y1, int x2, int y2, const TCHAR *FileName ) ;																																	// Œ»İ•`‰æ‘ÎÛ‚É‚È‚Á‚Ä‚¢‚é‰æ–Ê‚ğ‚c‚c‚rŒ`®‚Å•Û‘¶‚·‚é
-extern	int			SaveDrawScreenToJPEG( int x1, int y1, int x2, int y2, const TCHAR *FileName, int Quality = 80 , int Sample2x1 = TRUE ) ;																						// Œ»İ•`‰æ‘ÎÛ‚É‚È‚Á‚Ä‚¢‚é‰æ–Ê‚ğ‚i‚o‚d‚fŒ`®‚Å•Û‘¶‚·‚é Quality = ‰æ¿A’l‚ª‘å‚«‚¢‚Ù‚Ç’áˆ³k‚‰æ¿,0`100 
+extern	int			SaveDrawScreenToJPEG( int x1, int y1, int x2, int y2, const TCHAR *FileName, int Quality = 80 , int Sample2x1 = TRUE ) ;																						// Œ»İ•`‰æ‘ÎÛ‚É‚È‚Á‚Ä‚¢‚é‰æ–Ê‚ğ‚i‚o‚d‚fŒ`®‚Å•Û‘¶‚·‚é Quality = ‰æ¿A’l‚ª‘å‚«‚¢‚Ù‚Ç’áˆ³k‚‰æ¿,0`100
 extern	int			SaveDrawScreenToPNG(  int x1, int y1, int x2, int y2, const TCHAR *FileName, int CompressionLevel = -1 ) ;																										// Œ»İ•`‰æ‘ÎÛ‚É‚È‚Á‚Ä‚¢‚é‰æ–Ê‚ğ‚o‚m‚fŒ`®‚Å•Û‘¶‚·‚é CompressionLevel = ˆ³k—¦A’l‚ª‘å‚«‚¢‚Ù‚Ç‚ˆ³k—¦‚•‰‰×A‚O‚Í–³ˆ³k,0`9
 
 // •`‰æ‘ÎÛ‚É‚Å‚«‚éƒOƒ‰ƒtƒBƒbƒNƒnƒ“ƒhƒ‹•Û‘¶ŠÖ”
@@ -2882,7 +2882,7 @@ extern	int			SaveDrawScreenToPNG(  int x1, int y1, int x2, int y2, const TCHAR *
 extern	int			SaveDrawValidGraph(       int GrHandle, int x1, int y1, int x2, int y2, const TCHAR *FileName, int SaveType = DX_IMAGESAVETYPE_BMP , int Jpeg_Quality = 80 , int Jpeg_Sample2x1 = TRUE , int Png_CompressionLevel = -1 ) ;		// •`‰æ‘ÎÛ‚É‚Å‚«‚éƒOƒ‰ƒtƒBƒbƒNƒnƒ“ƒhƒ‹‚ğƒtƒ@ƒCƒ‹‚Å•Û‘¶‚·‚é
 extern	int			SaveDrawValidGraphToBMP(  int GrHandle, int x1, int y1, int x2, int y2, const TCHAR *FileName ) ;																																// •`‰æ‘ÎÛ‚É‚Å‚«‚éƒOƒ‰ƒtƒBƒbƒNƒnƒ“ƒhƒ‹‚ğ‚a‚l‚oŒ`®‚Å•Û‘¶‚·‚é
 extern	int			SaveDrawValidGraphToDDS(  int GrHandle, int x1, int y1, int x2, int y2, const TCHAR *FileName ) ;																																// •`‰æ‘ÎÛ‚É‚Å‚«‚éƒOƒ‰ƒtƒBƒbƒNƒnƒ“ƒhƒ‹‚ğ‚c‚c‚rŒ`®‚Å•Û‘¶‚·‚é
-extern	int			SaveDrawValidGraphToJPEG( int GrHandle, int x1, int y1, int x2, int y2, const TCHAR *FileName, int Quality = 80 , int Sample2x1 = TRUE ) ;																						// •`‰æ‘ÎÛ‚É‚Å‚«‚éƒOƒ‰ƒtƒBƒbƒNƒnƒ“ƒhƒ‹‚ğ‚i‚o‚d‚fŒ`®‚Å•Û‘¶‚·‚é Quality = ‰æ¿A’l‚ª‘å‚«‚¢‚Ù‚Ç’áˆ³k‚‰æ¿,0`100 
+extern	int			SaveDrawValidGraphToJPEG( int GrHandle, int x1, int y1, int x2, int y2, const TCHAR *FileName, int Quality = 80 , int Sample2x1 = TRUE ) ;																						// •`‰æ‘ÎÛ‚É‚Å‚«‚éƒOƒ‰ƒtƒBƒbƒNƒnƒ“ƒhƒ‹‚ğ‚i‚o‚d‚fŒ`®‚Å•Û‘¶‚·‚é Quality = ‰æ¿A’l‚ª‘å‚«‚¢‚Ù‚Ç’áˆ³k‚‰æ¿,0`100
 extern	int			SaveDrawValidGraphToPNG(  int GrHandle, int x1, int y1, int x2, int y2, const TCHAR *FileName, int CompressionLevel = -1 ) ;																									// •`‰æ‘ÎÛ‚É‚Å‚«‚éƒOƒ‰ƒtƒBƒbƒNƒnƒ“ƒhƒ‹‚ğ‚o‚m‚fŒ`®‚Å•Û‘¶‚·‚é CompressionLevel = ˆ³k—¦A’l‚ª‘å‚«‚¢‚Ù‚Ç‚ˆ³k—¦‚•‰‰×A‚O‚Í–³ˆ³k,0`9
 
 #endif // DX_NON_SAVEFUNCTION
@@ -3200,7 +3200,7 @@ extern	int			GetTexFormatIndex(			const IMAGEFORMATDESC *Format ) ;													
 
 #ifndef DX_NON_MASK
 
-// ƒ}ƒXƒNŠÖŒW 
+// ƒ}ƒXƒNŠÖŒW
 extern	int			CreateMaskScreen(				void ) ;																						// ƒ}ƒXƒNƒXƒNƒŠ[ƒ“‚ğì¬‚·‚é
 extern	int			DeleteMaskScreen(				void ) ;																						// ƒ}ƒXƒNƒXƒNƒŠ[ƒ“‚ğíœ‚·‚é
 extern	int			DrawMaskToDirectData(			int x, int y, int Width, int Height, const void *MaskData , int TransMode ) ;					// ƒ}ƒXƒNƒXƒNƒŠ[ƒ“‚Éƒƒ‚ƒŠã‚Ìƒrƒbƒgƒ}ƒbƒvƒf[ƒ^‚ğ“]‘—‚·‚é( MaskData ‚Í 1byte ‚Å 1dot •\‚·‚Pƒ‰ƒCƒ“‚ ‚½‚è Width byte ‚Ìƒf[ƒ^”z—ñ‚Ìæ“ªƒAƒhƒŒƒX )
@@ -3520,10 +3520,10 @@ extern	int			VectorScale(                   VECTOR   *Out, const VECTOR   *In, f
 extern	int			VectorScaleD(                  VECTOR_D *Out, const VECTOR_D *In, double Scale ) ;												// ƒxƒNƒgƒ‹‚ğƒXƒJƒ‰[”{‚·‚é
 extern	int			VectorMultiply(                VECTOR   *Out, const VECTOR   *In1, const VECTOR   *In2 ) ;										// ƒxƒNƒgƒ‹‚ÌŠ|‚¯Z‚ğ‚·‚é
 extern	int			VectorMultiplyD(               VECTOR_D *Out, const VECTOR_D *In1, const VECTOR_D *In2 ) ;										// ƒxƒNƒgƒ‹‚ÌŠ|‚¯Z‚ğ‚·‚é
-extern	int			VectorSub(                     VECTOR   *Out, const VECTOR   *In1, const VECTOR   *In2 ) ;										// Out = In1 - In2 ‚ÌƒxƒNƒgƒ‹ŒvZ‚ğ‚·‚é 
-extern	int			VectorSubD(                    VECTOR_D *Out, const VECTOR_D *In1, const VECTOR_D *In2 ) ;										// Out = In1 - In2 ‚ÌƒxƒNƒgƒ‹ŒvZ‚ğ‚·‚é 
-extern	int			VectorAdd(                     VECTOR   *Out, const VECTOR   *In1, const VECTOR   *In2 ) ;										// Out = In1 + In2 ‚ÌƒxƒNƒgƒ‹ŒvZ‚ğ‚·‚é 
-extern	int			VectorAddD(                    VECTOR_D *Out, const VECTOR_D *In1, const VECTOR_D *In2 ) ;										// Out = In1 + In2 ‚ÌƒxƒNƒgƒ‹ŒvZ‚ğ‚·‚é 
+extern	int			VectorSub(                     VECTOR   *Out, const VECTOR   *In1, const VECTOR   *In2 ) ;										// Out = In1 - In2 ‚ÌƒxƒNƒgƒ‹ŒvZ‚ğ‚·‚é
+extern	int			VectorSubD(                    VECTOR_D *Out, const VECTOR_D *In1, const VECTOR_D *In2 ) ;										// Out = In1 - In2 ‚ÌƒxƒNƒgƒ‹ŒvZ‚ğ‚·‚é
+extern	int			VectorAdd(                     VECTOR   *Out, const VECTOR   *In1, const VECTOR   *In2 ) ;										// Out = In1 + In2 ‚ÌƒxƒNƒgƒ‹ŒvZ‚ğ‚·‚é
+extern	int			VectorAddD(                    VECTOR_D *Out, const VECTOR_D *In1, const VECTOR_D *In2 ) ;										// Out = In1 + In2 ‚ÌƒxƒNƒgƒ‹ŒvZ‚ğ‚·‚é
 extern	int			VectorOuterProduct(            VECTOR   *Out, const VECTOR   *In1, const VECTOR   *In2 ) ;										// In1‚ÆIn2‚ÌŠOÏ‚ğŒvZ‚·‚é
 extern	int			VectorOuterProductD(           VECTOR_D *Out, const VECTOR_D *In1, const VECTOR_D *In2 ) ;										// In1‚ÆIn2‚ÌŠOÏ‚ğŒvZ‚·‚é
 extern	float 		VectorInnerProduct(            const VECTOR   *In1, const VECTOR   *In2 ) ;														// In1‚ÆIn2‚Ì“àÏ‚ğŒvZ‚·‚é
@@ -3559,10 +3559,10 @@ extern	float 		Segment_Segment_MinLength(           VECTOR   SegmentAPos1, VECTO
 extern	double		Segment_Segment_MinLengthD(          VECTOR_D SegmentAPos1, VECTOR_D SegmentAPos2, VECTOR_D SegmentBPos1, VECTOR_D SegmentBPos2 ) ;														// “ñ‚Â‚Ìü•ª‚ÌÅ‹ß“_ŠÔ‚Ì‹——£‚ğ“¾‚é
 extern	float 		Segment_Segment_MinLength_Square(    VECTOR   SegmentAPos1, VECTOR   SegmentAPos2, VECTOR   SegmentBPos1, VECTOR   SegmentBPos2 ) ;														// “ñ‚Â‚Ìü•ª‚ÌÅ‹ß“_ŠÔ‚Ì‹——£‚Ì“ñæ‚ğ“¾‚é
 extern	double		Segment_Segment_MinLength_SquareD(   VECTOR_D SegmentAPos1, VECTOR_D SegmentAPos2, VECTOR_D SegmentBPos1, VECTOR_D SegmentBPos2 ) ;														// “ñ‚Â‚Ìü•ª‚ÌÅ‹ß“_ŠÔ‚Ì‹——£‚Ì“ñæ‚ğ“¾‚é
-extern	float 		Segment_Triangle_MinLength(          VECTOR   SegmentPos1, VECTOR   SegmentPos2, VECTOR   TrianglePos1, VECTOR   TrianglePos2, VECTOR   TrianglePos3 ) ;								// ü•ª‚ÆOŠpŒ`‚ÌÅ‹ß“_ŠÔ‚Ì‹——£‚ğ“¾‚é 
-extern	double		Segment_Triangle_MinLengthD(         VECTOR_D SegmentPos1, VECTOR_D SegmentPos2, VECTOR_D TrianglePos1, VECTOR_D TrianglePos2, VECTOR_D TrianglePos3 ) ;								// ü•ª‚ÆOŠpŒ`‚ÌÅ‹ß“_ŠÔ‚Ì‹——£‚ğ“¾‚é 
-extern	float 		Segment_Triangle_MinLength_Square(   VECTOR   SegmentPos1, VECTOR   SegmentPos2, VECTOR   TrianglePos1, VECTOR   TrianglePos2, VECTOR   TrianglePos3 ) ;								// ü•ª‚ÆOŠpŒ`‚ÌÅ‹ß“_ŠÔ‚Ì‹——£‚Ì“ñæ‚ğ“¾‚é 
-extern	double		Segment_Triangle_MinLength_SquareD(  VECTOR_D SegmentPos1, VECTOR_D SegmentPos2, VECTOR_D TrianglePos1, VECTOR_D TrianglePos2, VECTOR_D TrianglePos3 ) ;								// ü•ª‚ÆOŠpŒ`‚ÌÅ‹ß“_ŠÔ‚Ì‹——£‚Ì“ñæ‚ğ“¾‚é 
+extern	float 		Segment_Triangle_MinLength(          VECTOR   SegmentPos1, VECTOR   SegmentPos2, VECTOR   TrianglePos1, VECTOR   TrianglePos2, VECTOR   TrianglePos3 ) ;								// ü•ª‚ÆOŠpŒ`‚ÌÅ‹ß“_ŠÔ‚Ì‹——£‚ğ“¾‚é
+extern	double		Segment_Triangle_MinLengthD(         VECTOR_D SegmentPos1, VECTOR_D SegmentPos2, VECTOR_D TrianglePos1, VECTOR_D TrianglePos2, VECTOR_D TrianglePos3 ) ;								// ü•ª‚ÆOŠpŒ`‚ÌÅ‹ß“_ŠÔ‚Ì‹——£‚ğ“¾‚é
+extern	float 		Segment_Triangle_MinLength_Square(   VECTOR   SegmentPos1, VECTOR   SegmentPos2, VECTOR   TrianglePos1, VECTOR   TrianglePos2, VECTOR   TrianglePos3 ) ;								// ü•ª‚ÆOŠpŒ`‚ÌÅ‹ß“_ŠÔ‚Ì‹——£‚Ì“ñæ‚ğ“¾‚é
+extern	double		Segment_Triangle_MinLength_SquareD(  VECTOR_D SegmentPos1, VECTOR_D SegmentPos2, VECTOR_D TrianglePos1, VECTOR_D TrianglePos2, VECTOR_D TrianglePos3 ) ;								// ü•ª‚ÆOŠpŒ`‚ÌÅ‹ß“_ŠÔ‚Ì‹——£‚Ì“ñæ‚ğ“¾‚é
 extern	float 		Segment_Point_MinLength(             VECTOR   SegmentPos1, VECTOR   SegmentPos2, VECTOR   PointPos ) ;																					// ü•ª‚Æ“_‚Ìˆê”Ô‹ß‚¢‹——£‚ğ“¾‚é
 extern	double		Segment_Point_MinLengthD(            VECTOR_D SegmentPos1, VECTOR_D SegmentPos2, VECTOR_D PointPos ) ;																					// ü•ª‚Æ“_‚Ìˆê”Ô‹ß‚¢‹——£‚ğ“¾‚é
 extern	float 		Segment_Point_MinLength_Square(      VECTOR   SegmentPos1, VECTOR   SegmentPos2, VECTOR   PointPos ) ;																					// ü•ª‚Æ“_‚Ìˆê”Ô‹ß‚¢‹——£‚Ì“ñæ‚ğ“¾‚é
@@ -4111,7 +4111,7 @@ extern	int			BltBaseImageWithAlphaBlend(          int SrcX, int SrcY, int SrcSiz
 extern	int			ReverseBaseImageH(                   BASEIMAGE *BaseImage ) ;																																		// Šî–{ƒCƒ[ƒWƒf[ƒ^‚ğ¶‰E”½“]‚·‚é
 extern	int			ReverseBaseImageV(                   BASEIMAGE *BaseImage ) ;																																		// Šî–{ƒCƒ[ƒWƒf[ƒ^‚ğã‰º”½“]‚·‚é
 extern	int			ReverseBaseImage(                    BASEIMAGE *BaseImage ) ;																																		// Šî–{ƒCƒ[ƒWƒf[ƒ^‚ğã‰º¶‰E”½“]‚·‚é
-extern	int			CheckPixelAlphaBaseImage(      const BASEIMAGE *BaseImage ) ;																																		// Šî–{ƒCƒ[ƒWƒf[ƒ^‚ÉŠÜ‚Ü‚ê‚éƒsƒNƒZƒ‹‚ÌƒAƒ‹ƒtƒ@’l‚ğƒ`ƒFƒbƒN‚·‚é( –ß‚è’l   -1:ƒGƒ‰[  0:‰æ‘œ‚ÉƒAƒ‹ƒtƒ@¬•ª‚ª–³‚¢  1:‰æ‘œ‚ÉƒAƒ‹ƒtƒ@¬•ª‚ª‚ ‚èA‚·‚×‚ÄÅ‘å(255)’l  2:‰æ‘œ‚ÉƒAƒ‹ƒtƒ@¬•ª‚ª‚ ‚èA‘¶İ‚·‚éƒAƒ‹ƒtƒ@’l‚ÍÅ¬(0)‚ÆÅ‘å(255)‚à‚µ‚­‚ÍÅ¬(0)‚Ì‚İ@3:‰æ‘œ‚ÉƒAƒ‹ƒtƒ@¬•ª‚ª‚ ‚èAÅ¬‚ÆÅ‘åˆÈŠO‚Ì’†ŠÔ‚Ì’l‚ª‚ ‚é )  
+extern	int			CheckPixelAlphaBaseImage(      const BASEIMAGE *BaseImage ) ;																																		// Šî–{ƒCƒ[ƒWƒf[ƒ^‚ÉŠÜ‚Ü‚ê‚éƒsƒNƒZƒ‹‚ÌƒAƒ‹ƒtƒ@’l‚ğƒ`ƒFƒbƒN‚·‚é( –ß‚è’l   -1:ƒGƒ‰[  0:‰æ‘œ‚ÉƒAƒ‹ƒtƒ@¬•ª‚ª–³‚¢  1:‰æ‘œ‚ÉƒAƒ‹ƒtƒ@¬•ª‚ª‚ ‚èA‚·‚×‚ÄÅ‘å(255)’l  2:‰æ‘œ‚ÉƒAƒ‹ƒtƒ@¬•ª‚ª‚ ‚èA‘¶İ‚·‚éƒAƒ‹ƒtƒ@’l‚ÍÅ¬(0)‚ÆÅ‘å(255)‚à‚µ‚­‚ÍÅ¬(0)‚Ì‚İ@3:‰æ‘œ‚ÉƒAƒ‹ƒtƒ@¬•ª‚ª‚ ‚èAÅ¬‚ÆÅ‘åˆÈŠO‚Ì’†ŠÔ‚Ì’l‚ª‚ ‚é )
 extern	int			GetBaseImageUseMaxPaletteNo(   const BASEIMAGE *BaseImage ) ;																																		// Šî–{ƒCƒ[ƒWƒf[ƒ^‚Åg—p‚³‚ê‚Ä‚¢‚éƒpƒŒƒbƒg”Ô†‚ÌÅ‘å’l‚ğæ“¾‚·‚é( ƒpƒŒƒbƒg‰æ‘œ‚Å‚Í–³‚¢ê‡‚Í -1 ‚ª•Ô‚é )
 
 #ifndef DX_NON_JPEGREAD
@@ -4207,7 +4207,7 @@ extern	int			DeleteSoftImage(                 int SIHandle ) ;																	/
 extern	int			GetSoftImageSize(                int SIHandle, int *Width, int *Height ) ;											// ƒ\ƒtƒgƒEƒGƒAƒCƒ[ƒWƒnƒ“ƒhƒ‹‚ÌƒTƒCƒY‚ğæ“¾‚·‚é
 extern	int			CheckPaletteSoftImage(           int SIHandle ) ;																	// ƒ\ƒtƒgƒEƒGƒAƒCƒ[ƒWƒnƒ“ƒhƒ‹‚ªƒpƒŒƒbƒg‰æ‘œ‚©‚Ç‚¤‚©‚ğæ“¾‚·‚é( TRUE:ƒpƒŒƒbƒg‰æ‘œ  FALSE:ƒpƒŒƒbƒg‰æ‘œ‚¶‚á‚È‚¢ )
 extern	int			CheckAlphaSoftImage(             int SIHandle ) ;																	// ƒ\ƒtƒgƒEƒGƒAƒCƒ[ƒWƒnƒ“ƒhƒ‹‚ÌƒtƒH[ƒ}ƒbƒg‚Éƒ¿—v‘f‚ª‚ ‚é‚©‚Ç‚¤‚©‚ğæ“¾‚·‚é( TRUE:‚ ‚é  FALSE:‚È‚¢ )
-extern	int			CheckPixelAlphaSoftImage(        int SIHandle ) ;																	// ƒ\ƒtƒgƒEƒGƒAƒCƒ[ƒWƒnƒ“ƒhƒ‹‚ÉŠÜ‚Ü‚ê‚éƒsƒNƒZƒ‹‚Ìƒ¿’l‚ğƒ`ƒFƒbƒN‚·‚é( –ß‚è’l   -1:ƒGƒ‰[  0:‰æ‘œ‚Éƒ¿¬•ª‚ª–³‚¢  1:‰æ‘œ‚Éƒ¿¬•ª‚ª‚ ‚èA‚·‚×‚ÄÅ‘å(255)’l  2:‰æ‘œ‚Éƒ¿¬•ª‚ª‚ ‚èA‘¶İ‚·‚éƒ¿’l‚ÍÅ¬(0)‚ÆÅ‘å(255)‚à‚µ‚­‚ÍÅ¬(0)‚Ì‚İ@3:‰æ‘œ‚Éƒ¿¬•ª‚ª‚ ‚èAÅ¬‚ÆÅ‘åˆÈŠO‚Ì’†ŠÔ‚Ì’l‚ª‚ ‚é )  
+extern	int			CheckPixelAlphaSoftImage(        int SIHandle ) ;																	// ƒ\ƒtƒgƒEƒGƒAƒCƒ[ƒWƒnƒ“ƒhƒ‹‚ÉŠÜ‚Ü‚ê‚éƒsƒNƒZƒ‹‚Ìƒ¿’l‚ğƒ`ƒFƒbƒN‚·‚é( –ß‚è’l   -1:ƒGƒ‰[  0:‰æ‘œ‚Éƒ¿¬•ª‚ª–³‚¢  1:‰æ‘œ‚Éƒ¿¬•ª‚ª‚ ‚èA‚·‚×‚ÄÅ‘å(255)’l  2:‰æ‘œ‚Éƒ¿¬•ª‚ª‚ ‚èA‘¶İ‚·‚éƒ¿’l‚ÍÅ¬(0)‚ÆÅ‘å(255)‚à‚µ‚­‚ÍÅ¬(0)‚Ì‚İ@3:‰æ‘œ‚Éƒ¿¬•ª‚ª‚ ‚èAÅ¬‚ÆÅ‘åˆÈŠO‚Ì’†ŠÔ‚Ì’l‚ª‚ ‚é )
 
 extern	int			GetDrawScreenSoftImage(          int x1, int y1, int x2, int y2, int SIHandle ) ;									// •`‰æ‘ÎÛ‚Ì‰æ–Ê‚©‚çw’è—Ìˆæ‚ğƒ\ƒtƒgƒEƒGƒAƒCƒ[ƒWƒnƒ“ƒhƒ‹‚É“]‘—‚·‚é
 extern	int			GetDrawScreenSoftImageDestPos(   int x1, int y1, int x2, int y2, int SIHandle, int DestX, int DestY ) ;				// •`‰æ‘ÎÛ‚Ì‰æ–Ê‚©‚çw’è—Ìˆæ‚ğƒ\ƒtƒgƒEƒGƒAƒCƒ[ƒWƒnƒ“ƒhƒ‹‚É“]‘—‚·‚é( “]‘—æÀ•Ww’è”Å )
@@ -4251,7 +4251,7 @@ extern	int			SaveSoftImageToDds(              const TCHAR *FilePath, int SIHandl
 extern	int			SaveSoftImageToPng(              const TCHAR *FilePath, int SIHandle, int CompressionLevel ) ;						// ƒ\ƒtƒgƒEƒGƒAƒCƒ[ƒWƒnƒ“ƒhƒ‹‚ğ‚o‚m‚f‰æ‘œƒtƒ@ƒCƒ‹‚Æ‚µ‚Ä•Û‘¶‚·‚é CompressionLevel = ˆ³k—¦A’l‚ª‘å‚«‚¢‚Ù‚Ç‚ˆ³k—¦‚•‰‰×A‚O‚Í–³ˆ³k,0`9
 #endif // DX_NON_PNGREAD
 #ifndef DX_NON_JPEGREAD
-extern	int			SaveSoftImageToJpeg(             const TCHAR *FilePath, int SIHandle, int Quality, int Sample2x1 ) ;				// ƒ\ƒtƒgƒEƒGƒAƒCƒ[ƒWƒnƒ“ƒhƒ‹‚ğ‚i‚o‚d‚f‰æ‘œƒtƒ@ƒCƒ‹‚Æ‚µ‚Ä•Û‘¶‚·‚é Quality = ‰æ¿A’l‚ª‘å‚«‚¢‚Ù‚Ç’áˆ³k‚‰æ¿,0`100 
+extern	int			SaveSoftImageToJpeg(             const TCHAR *FilePath, int SIHandle, int Quality, int Sample2x1 ) ;				// ƒ\ƒtƒgƒEƒGƒAƒCƒ[ƒWƒnƒ“ƒhƒ‹‚ğ‚i‚o‚d‚f‰æ‘œƒtƒ@ƒCƒ‹‚Æ‚µ‚Ä•Û‘¶‚·‚é Quality = ‰æ¿A’l‚ª‘å‚«‚¢‚Ù‚Ç’áˆ³k‚‰æ¿,0`100
 #endif // DX_NON_JPEGREAD
 
 #endif // DX_NON_SAVEFUNCTION
@@ -4921,5 +4921,3 @@ using namespace DxLib ;
 #endif
 
 #endif
-
-
