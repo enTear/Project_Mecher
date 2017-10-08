@@ -28,5 +28,7 @@ int main(int argc, char const *argv[]) {
     readWordIn = "他に御用はありますか？";
     SPEAK_MASTER;
   }
+  readWordIn = "了解です、お疲れさまでした！";
+  SPEAK_MASTER;
   return 0;
 }
