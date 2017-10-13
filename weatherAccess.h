@@ -1,14 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <windows.h>
-#include <shellapi.h>
-#include <objbase.h>
-#include <shellapi.h>
-#pragma comment(lib, "user32.lib")
-#pragma comment(lib, "ole32.lib")
-#pragma comment(lib, "shell32.lib")
 
-int main(void)
+
+int weatherAccess(void)
 {
 	FILE *fp;	/* (1)ファイルポインタの宣言 */
 	char textNumber[48][256] = {0};
@@ -20,7 +12,7 @@ int main(void)
   //char amari = '/';
 	/* (2)ファイルのオープン */
 	/*  ここで、ファイルポインタを取得する */
-	if ((fp = fopen("smpl.txt", "r")) == NULL) {
+	if ((fp = fopen("weather.Date", "r")) == NULL) {
 		printf("file open error!!\n");
 		exit(EXIT_FAILURE);	/* (3)エラーの場合は通常、異常終了する */
 	}
@@ -29,7 +21,7 @@ int main(void)
 	}
 
 
-	printf("行を入力してください\n");
+	printf("都道府県番号を入力してください\n");
 	scanf("%d",&gyo);
 	printf("%s\n",textNumber[gyo]);
 	num = ((int)textNumber[gyo][15] - '0')*10 + ((int)textNumber[gyo][16] - '0');

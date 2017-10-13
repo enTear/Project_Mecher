@@ -1,6 +1,7 @@
 #include "standardInclude.h"
 #include "BouyomiChan.h"
 #include "quickAccessToWeb.h"
+#include "weatherAccess.h"
 
 
 
@@ -15,6 +16,7 @@ int main(int argc, char const *argv[]) {
 
       cout << endl << "0.原初に戻る" << endl;
       cout << "1.検索" <<endl;
+      cout << "2.天気予報" << endl;
 
     SELECT_NUNBER;
     if(selectNunber==0)break;
@@ -23,8 +25,11 @@ int main(int argc, char const *argv[]) {
           readWordIn= "検索を行います。";
           SPEAK_MASTER;
           quickAccessToWeb();
-
-    }
+        case 2:
+          readWordIn= "天気を調べます。\n";
+          SPEAK_MASTER;
+          weatherAccess();
+        }
     readWordIn = "他に御用はありますか？";
     SPEAK_MASTER;
   }

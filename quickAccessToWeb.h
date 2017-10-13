@@ -1,13 +1,6 @@
 
 
-#include <windows.h>
-#include <shellapi.h>
-#include <objbase.h>
-#include <stdio.h>
-#include <shellapi.h>
-#pragma comment(lib, "user32.lib")
-#pragma comment(lib, "ole32.lib")
-#pragma comment(lib, "shell32.lib")
+
 
 
 int access(char *argv);
