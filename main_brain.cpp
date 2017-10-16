@@ -28,7 +28,7 @@ int main(int argc, char const *argv[]) {
         case 2:
           readWordIn= "天気を調べます。\n";
           SPEAK_MASTER;
-          weatherAccess();
+          weatherAccessMaster();
         }
     readWordIn = "他に御用はありますか？";
     SPEAK_MASTER;

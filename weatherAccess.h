@@ -291,6 +291,7 @@ int weatherAccessMaster(void){
 
 int weatherAccess(int num)
 {
+	char str[64];
 	char weather[64] = {"https://weather.yahoo.co.jp/weather/jp/"};
   if(num == 1){
 		ShellExecute(NULL, "open","https://weather.yahoo.co.jp/weather/jp/1.html?day=1", NULL, NULL, SW_SHOW);
