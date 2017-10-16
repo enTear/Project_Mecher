@@ -33,16 +33,25 @@ int weatherAccessMaster(void){
 				case 0:
 					break;
 				case 1:
-					weatherAccess();
+					weatherAccess(1);
 					break;
 				case 2:
-					weatherAccess();
+					weatherAccess(2);
 					break;
 				case 3:
-					weatherAccess();
+					weatherAccess(3);
 					break;
 				case 4:
-					weatherAccess();
+					weatherAccess(4);
+					break;
+				case 5:
+					weatherAccess(5);
+					break;
+				case 6:
+					weatherAccess(6);
+					break;
+				case 7:
+					weatherAccess(7);
 					break;
 			}
 			break;
@@ -61,19 +70,28 @@ int weatherAccessMaster(void){
 
 				switch (selectNunber) {
 					case 0:
-					break;
+					  break;
 					case 1:
-						weatherAccess();
-					break;
+						weatherAccess(8);
+					  break;
 					case 2:
-						weatherAccess();
-					break;
+						weatherAccess(9);
+					  break;
 					case 3:
-						weatherAccess();
-					break;
+						weatherAccess(10);
+					  break;
 					case 4:
-						weatherAccess();
-					break;
+						weatherAccess(11);
+				  	break;
+			  	case 5:
+				  	weatherAccess(12);
+					  break;
+			  	case 6:
+			  		weatherAccess(13);
+					  break;
+			  	case 7:
+			  		weatherAccess(14);
+				  	break;
 				}
 			break;
 		case 3:
@@ -95,16 +113,31 @@ int weatherAccessMaster(void){
 				case 0:
 					break;
 				case 1:
-					weatherAccess();
+					weatherAccess(15);
 					break;
 				case 2:
-					weatherAccess();
+					weatherAccess(16);
 					break;
 				case 3:
-					weatherAccess();
+					weatherAccess(17);
 					break;
 				case 4:
-					weatherAccess();
+					weatherAccess(18);
+					break;
+				case 5:
+					weatherAccess(19);
+					break;
+				case 6:
+					weatherAccess(20);
+					break;
+				case 7:
+					weatherAccess(21);
+					break;
+				case 8:
+					weatherAccess(22);
+					break;
+				case 9:
+					weatherAccess(23);
 					break;
 			}
 			break;
@@ -123,48 +156,58 @@ int weatherAccessMaster(void){
 
 				switch (selectNunber) {
 					case 0:
-					break;
+					  break;
 					case 1:
-						weatherAccess();
+						weatherAccess(24);
 					break;
 					case 2:
-						weatherAccess();
+						weatherAccess(25);
 					break;
 					case 3:
-						weatherAccess();
+						weatherAccess(26);
 					break;
 					case 4:
-						weatherAccess();
+						weatherAccess(27);
 					break;
+			  	case 5:
+			 	  	weatherAccess(28);
+			 	  	break;
+			  	case 6:
+			  		weatherAccess(29);
+			  		break;
+			  	case 7:
+			  		weatherAccess(30);
+			  		break;
 				}
 			break;
 		case 5:
 			readWordIn= "ìsìπï{åßÇÃìVãCÇå©Ç‹Ç∑Ç©ÅH";
 			SPEAK_MASTER;
 				cout << endl << "0.ñﬂÇÈ" << endl;
-				cout << "1." <<endl;
-				cout << "2." <<endl;
-				cout << "3." <<endl;
-				cout << "4." <<endl;
-				cout << "5." <<endl;
-				cout << "6." <<endl;
-				cout << "7." <<endl;
+				cout << "1.íπéÊ" <<endl;
+				cout << "2.ìáç™" <<endl;
+				cout << "3.â™éR" <<endl;
+				cout << "4.çLìá" <<endl;
+				cout << "5.éRå˚" <<endl;
 			SELECT_NUNBER;
 
 			switch (selectNunber) {
 				case 0:
 					break;
 				case 1:
-					weatherAccess();
+					weatherAccess(31);
 					break;
 				case 2:
-					weatherAccess();
+					weatherAccess(32);
 					break;
 				case 3:
-					weatherAccess();
+					weatherAccess(33);
 					break;
 				case 4:
-					weatherAccess();
+					weatherAccess(34);
+					break;
+				case 5:
+					weatherAccess(35);
 					break;
 			}
 			break;
@@ -172,59 +215,69 @@ int weatherAccessMaster(void){
 			readWordIn= "ìsìπï{åßÇÃìVãCÇå©Ç‹Ç∑Ç©ÅH";
 			SPEAK_MASTER;
 				cout << endl << "0.ñﬂÇÈ" << endl;
-				cout << "1." <<endl;
-				cout << "2." <<endl;
-				cout << "3." <<endl;
-				cout << "4." <<endl;
-				cout << "5." <<endl;
-				cout << "6." <<endl;
-				cout << "7." <<endl;
+				cout << "1.ìøìá" <<endl;
+				cout << "2.çÅêÏ" <<endl;
+				cout << "3.à§ïQ" <<endl;
+				cout << "4.çÇím" <<endl;
 				SELECT_NUNBER;
 
 				switch (selectNunber) {
 					case 0:
-					break;
+					  break;
 					case 1:
-						weatherAccess();
-					break;
+						weatherAccess(36);
+					  break;
 					case 2:
-						weatherAccess();
-					break;
+						weatherAccess(37);
+					  break;
 					case 3:
-						weatherAccess();
-					break;
+						weatherAccess(38);
+					  break;
 					case 4:
-						weatherAccess();
-					break;
+						weatherAccess(39);
+					  break;
 				}
 			break;
 		case 7:
 			readWordIn= "ìsìπï{åßÇÃìVãCÇå©Ç‹Ç∑Ç©ÅH";
 			SPEAK_MASTER;
 				cout << endl << "0.ñﬂÇÈ" << endl;
-				cout << "1." <<endl;
-				cout << "2." <<endl;
-				cout << "3." <<endl;
-				cout << "4." <<endl;
-				cout << "5." <<endl;
-				cout << "6." <<endl;
-				cout << "7." <<endl;
+				cout << "1.ïüâ™" <<endl;
+				cout << "2.ç≤âÍ" <<endl;
+				cout << "3.í∑çË" <<endl;
+				cout << "4.åFñ{" <<endl;
+				cout << "5.ëÂï™" <<endl;
+				cout << "6.ã{çË" <<endl;
+				cout << "7.é≠éôìá" <<endl;
+				cout << "8.â´ìÍ" <<endl;
 			SELECT_NUNBER;
 
 			switch (selectNunber) {
 				case 0:
 					break;
 				case 1:
-					weatherAccess();
+					weatherAccess(40);
 					break;
 				case 2:
-					weatherAccess();
+					weatherAccess(41);
 					break;
 				case 3:
-					weatherAccess();
+					weatherAccess(42);
 					break;
 				case 4:
-					weatherAccess();
+					weatherAccess(43);
+					break;
+				case 5:
+					weatherAccess(44);
+					break;
+				case 6:
+					weatherAccess(45);
+					break;
+				case 7:
+					weatherAccess(46);
+					break;
+				case 8:
+					weatherAccess(47);
 					break;
 			}
 			break;
