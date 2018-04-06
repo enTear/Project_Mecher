@@ -6,34 +6,34 @@
 
 
 
-int main(int argc, char const *argv[]) {
+int main(int argc, char const *argv[]){
 
 
-  readWordIn = "‰½‚©Œä—p‚Å‚µ‚å‚¤‚©H";
+  readWordIn = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½Å‚ï¿½ï¿½å‚¤ï¿½ï¿½ï¿½H";
   SPEAK_MASTER;
 
   while (TURE) {
 
-      cout << endl << "0.Œ´‰‚É–ß‚é" << endl;
-      cout << "1.ŒŸõ" <<endl;
-      cout << "2.“V‹C—\•ñ" << endl;
+      cout << endl << "0.ï¿½ï¿½ï¿½ï¿½ï¿½É–ß‚ï¿½" << endl;
+      cout << "1.ï¿½ï¿½ï¿½ï¿½" <<endl;
+      cout << "2.ï¿½Vï¿½Cï¿½\ï¿½ï¿½" << endl;
 
     SELECT_NUNBER;
     if(selectNunber==0)break;
       switch (selectNunber) {
         case 1:
-          readWordIn= "ŒŸõ‚ğs‚¢‚Ü‚·B";
+          readWordIn= "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Ü‚ï¿½ï¿½B";
           SPEAK_MASTER;
           quickAccessToWeb();
         case 2:
-          readWordIn= "“V‹C‚ğ’²‚×‚Ü‚·B\n";
+          readWordIn= "ï¿½Vï¿½Cï¿½ğ’²‚×‚Ü‚ï¿½ï¿½B\n";
           SPEAK_MASTER;
           weatherAccessMaster();
         }
-    readWordIn = "‘¼‚ÉŒä—p‚Í‚ ‚è‚Ü‚·‚©H";
+    readWordIn = "ï¿½ï¿½ï¿½ÉŒï¿½ï¿½pï¿½Í‚ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½H";
     SPEAK_MASTER;
   }
-  readWordIn = "—¹‰ğ‚Å‚·A‚¨”æ‚ê‚³‚Ü‚Å‚µ‚½I";
+  readWordIn = "ï¿½ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½ê‚³ï¿½Ü‚Å‚ï¿½ï¿½ï¿½ï¿½I";
   SPEAK_MASTER;
   return 0;
 }
